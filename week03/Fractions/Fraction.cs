@@ -3,42 +3,45 @@ public class Fractions
     private int _top;
     private int _bottom;
 
-    public int Fraction()
+    public Fractions()
     {
-        return 0;
+        _top = 1;
+        _bottom = 1;
     }
-    public int Fraction(int wholeNumber)
+    public Fractions(int wholeNumber)
     {
-        return 0;
+        _top = wholeNumber;
+        _bottom = 1;
     }
-    public int Fraction(int top, int bottom)
+    public Fractions(int top, int bottom)
     {
-        return 0;
+        _top = top;
+        _bottom = bottom;
     }
 
     public int GetTop()
     {
-        return 0;
+        return _top;
     }
-    public int SetTop(int top)
+    public void SetTop(int top)
     {
-        return 0;
+        top = _top;
     }
     public int GetBottom()
     {
-        return 0;
+        return _bottom;
     }
-    public int SetBottom(int bottom)
+    public void SetBottom(int bottom)
     {
-        return 0;
+        bottom = _bottom;
     }
 
     public string GetFractionString()
     {
-        return "";
+        return $"{_top}/{_bottom}";
     }
-    public int GetDecimalValue()
+    public double GetDecimalValue()
     {
-        return 0;
+        return (double)_top / (double)_bottom;
     }
 }
