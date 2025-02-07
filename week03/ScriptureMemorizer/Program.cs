@@ -1,5 +1,7 @@
 using System;
 
+//I added code to give the user an option to select which scripture they want to memorize.
+
 class Program
 {
     static void Main(string[] args)
